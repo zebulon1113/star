@@ -29,16 +29,23 @@ $(document).ready(function(){
 		$('.progress').css('width',num+'%');
 	});
 	$('.page6-3').click(function(){
-		$('.page6-5').css('display','block').removeClass('bounceOut').addClass('bounceIn')
+		$('.page6-5').css('display','block').removeClass('bounceOut').addClass('bounceIn');
+		$('.page5-bg').css('display','block');
 	});
+	$('.page5-bg').click(function(){
+		$('.page5-bg').css('display','none');
+	})
 	$('.page6-5').click(function(){
 		$(this).addClass('bounceOut').css('display','none');
+		$('.page5-bg').css('display','none');
 	});
 	$('.page6-4').click(function(){
-		$('.page6-6').css('display','block').removeClass('bounceOut').addClass('bounceIn')
+		$('.page6-6').css('display','block').removeClass('bounceOut').addClass('bounceIn');
+		$('.page5-bg').css('display','block');
 	});
 	$('.page6-6').click(function(){
 		$(this).addClass('bounceOut').css('display','none');
+		$('.page5-bg').css('display','none');
 	});
 	
 	$('.music').click(function(){

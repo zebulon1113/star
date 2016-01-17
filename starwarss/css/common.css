@@ -7,6 +7,13 @@ body{
 	background: #050505;
 	height: 100%;
 }
+@font-face {
+ font-family: 'RTWSYueGoTrial-Regular';
+ src: url('../img/RTWSYueGoTrial-Regular.otf');
+}
+body {
+	font-family:'RTWSYueGoTrial-Regular';
+}
 div{
 	background-repeat: no-repeat;
 }
@@ -126,13 +133,13 @@ div{
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
-.page2{
+.page3{
 	background: url(../img/4-bg.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	position: relative;
 }
-.page3{
+.page2{
 	background: url(../img/3-bg.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -178,15 +185,71 @@ div{
 	background-repeat: no-repeat;
 	position: relative;
 }
+.page5-bg{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.9);
+	display: none;
+}
 .page6 form{
 	width: 300px;
-    height: 200px;
-    background: brown;
+    height: 290px;
+    background: url(../img/juxing.png);
+    background-size: 100% 100%;
     position: absolute;
     left: 0px;
     margin: auto;
     right: 0px;
-    top: 40%;
+    top: 90px;
+    bottom: 0px;
+    padding-top: 30px;
+}
+.page6-txt{
+	background: url(../img/8_3.png);
+    width: 300px;
+    background-size: 100% 100%;
+    height: 150px;
+    margin-top: 20px;
+    position: relative;
+}
+.page6-contain{
+	position: absolute;
+	bottom: 12px;
+    right: 40px;
+}
+#page6-info{
+	background: rgba(255,255,255,0.3);
+    border: none;
+    color: #13f1f8;
+    text-align: center;
+    -webkit-appearance: none;
+}
+.page6-contain p{
+	color: #13f1f8;
+	margin-bottom: 6px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border: none;
+}
+.page6 form input{
+	background: #00192a;
+	border: 1px solid #3d9fc0;
+	color:#0a8591;
+	text-align: center;
+	width: 70%;
+	height: 28px;
+}
+.page6 form p{
+	color: #13f1f8;
+	margin: 10px 0px;
+}
+#sub{
+	background: url(../img/sub.png) no-repeat;
+    border: none;
+    height: 60px;
+    background-size: 100% 100%;
+    width: 150px;
+    margin-top: 25px;
 }
 .page6-1{
 	position: absolute;
@@ -233,9 +296,9 @@ div{
 	-o-transition: width 1s;
 }
 .page6-2{
-	width: 60%;
+	width: 70%;
     position: absolute;
-    top: 110px;
+    top: 120px;
     left: 0px;
     right: 0px;
     bottom: 0px;
@@ -290,7 +353,7 @@ div{
 	position: absolute;
 	bottom: 5%;
 	left: 1%;
-	background: url(../img/4-4.png);
+	background: url(../img/1_03.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	width: 280px;
@@ -302,7 +365,7 @@ div{
 	position: absolute;
 	bottom: 5%;
 	left: 1%;
-	background: url(../img/1_06.png);
+	background: url(../img/2_03.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	width: 280px;
@@ -313,7 +376,7 @@ div{
 	position: absolute;
 	bottom: 2%;
 	left: 1%;
-	background: url(../img/4-5.png);
+	background: url(../img/2_03.png);
 	background-repeat: no-repeat;
 	background-size:100% 100%;
 	width: 280px;
@@ -413,4 +476,21 @@ div{
 
 .fullPage-dir-h {
     float: left;
+}
+
+@media only screen and  (max-width: 320px) {
+	.page6-2 {
+    width: 66%;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    }
+    .page6-txt{
+    	height: 128px;
+    	width: 280px;
+    	margin-top: 0px;
+    }
 }
